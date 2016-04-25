@@ -1,0 +1,34 @@
+﻿Build started 2016-04-10 7:34:36 PM.
+     1>Project "C:\Users\Steve\Desktop\SteveEngine\GameEngine\GameEngine.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I../includes /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt Button.cpp
+         Button.cpp
+     1>c:\users\steve\desktop\steveengine\gameengine\resourcemanager.h(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\steve\desktop\steveengine\gameengine\button.cpp(19): warning C4244: 'argument': conversion from 'double' to 'GLuint', possible loss of data
+     1>c:\users\steve\desktop\steveengine\gameengine\button.cpp(44): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+     1>c:\users\steve\desktop\steveengine\gameengine\button.cpp(45): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+     1>c:\users\steve\desktop\steveengine\gameengine\button.cpp(81): warning C4838: conversion from 'int' to 'GLfloat' requires a narrowing conversion
+     1>c:\users\steve\desktop\steveengine\gameengine\button.cpp(81): warning C4244: 'initializing': conversion from 'int' to 'GLfloat', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Steve\Desktop\SteveEngine\Debug\GameEngine.exe" /INCREMENTAL /NOLOGO /LIBPATH:../lib /LIBPATH:../lib/glfw /LIBPATH:../lib/glew /LIBPATH:../lib/SOIL SOIL.lib freetype.lib opengl32.lib glfw3.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Steve\Desktop\SteveEngine\Debug\GameEngine.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Steve\Desktop\SteveEngine\Debug\GameEngine.lib" /MACHINE:X86 Debug\AStar.obj
+         Debug\Button.obj
+         Debug\Camera.obj
+         Debug\Component.obj
+         Debug\GameState.obj
+         Debug\GameStateManager.obj
+         Debug\MapLoader.obj
+         Debug\MenuState.obj
+         Debug\Renderer.obj
+         Debug\ResourceManager.obj
+         Debug\SceneNode.obj
+         Debug\Shader.obj
+         Debug\Source.obj
+         Debug\TextRenderer.obj
+         Debug\Texture.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         GameEngine.vcxproj -> C:\Users\Steve\Desktop\SteveEngine\Debug\GameEngine.exe
+     1>Done Building Project "C:\Users\Steve\Desktop\SteveEngine\GameEngine\GameEngine.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.27

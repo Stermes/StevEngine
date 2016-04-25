@@ -1,0 +1,22 @@
+#ifndef PACKETINCLUDE_H0
+#define PACKETINCLUDE_H
+#include "MessageIdentifiers.h"
+
+enum ReadyEvents
+{
+	STARTGAME = 0,
+	COUNT
+};
+
+enum CustomPacketHeaders
+{
+	ID_STARTGAME = ID_USER_PACKET_ENUM,
+	ID_CLIENT_CREATE_RACER,
+	ID_HOST_CREATE_RACER,
+	ID_ACCELERATE,
+	ID_STOP_ACCELERATE,
+	ID_DECELERATE,
+	ID_WINNER,
+};
+
+#endif
