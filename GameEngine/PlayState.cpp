@@ -81,17 +81,7 @@ void PlayState::Update(float dt)
 	HandlePackets();
 
 	m_Root->Update(dt);
-	if (Car && Test)
-	{
-		const float *fM;
-		fM = glm::value_ptr(Test->GetModelMatrix());
 
-		printf("%f, %f, %f, pos \n", fM[12], fM[13], fM[14]);
-		
-		printf("%f, %f, %f, %f, rot \n", cos(fM[0]), sin(fM[5]), tan(fM[10]), fM[15]);
-		
-		Car->transform.rotation.z += 5.0f * dt;
-	}
 	if (Winner > 0)
 	{
 		Timer += dt;
@@ -179,10 +169,10 @@ void PlayState::HostCreate(RakNet::Packet *packet)
 	SceneNode* newNode = new SceneNode();
 	std::string loc = "Still" + std::to_string(Pos + 1);
 	newNode->AddComponent(new SpriteRenderer(ResourceManager::GetShader("SpriteShader"), ResourceManager::GetTexture(loc.c_str())));
-	newNode->transform.position.y = 0 - 0 * Pos;
-	newNode->transform.position.x = 0;
-	//newNode->transform.scale.x = 0.5f;
-	//newNode->transform.scale.y = 0.5f;
+	newNode->transform.position.y = 200 - 100 * Pos;
+	newNode->transform.position.x = -300;
+	newNode->transform.scale.x = 0.5f;
+	newNode->transform.scale.y = 0.5f;
 	newNode->AddComponent(new CarComp(Pos + 1));
 	newNode->SetNetworkIDManager(NetworkManager::Instance().GetIDManager());
 	m_Root->AddChild(newNode);
@@ -206,11 +196,7 @@ void PlayState::HostCreate(RakNet::Packet *packet)
 		}
 		oStream.Write(NetworkManager::Instance().GetMyGUID());
 		newNode->SetIsMaster(true);
-		Test = new SceneNode();
-		Test->AddComponent(new SpriteRenderer(ResourceManager::GetShader("SpriteShader"), ResourceManager::GetTexture(loc.c_str())));
-		Test->transform.position.x = 300;
-		newNode->AddChild(Test);
-		Car = newNode;
+
 	}
 	NetworkManager::Instance().peer->Send(&oStream, HIGH_PRIORITY, RELIABLE_ORDERED, 0, RakNet::UNASSIGNED_SYSTEM_ADDRESS, true);
 

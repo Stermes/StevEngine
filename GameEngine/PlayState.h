@@ -19,8 +19,6 @@ public:
 private:
 	class Camera* camera;
 	SceneNode *Text;
-	SceneNode *Test;
-	SceneNode *Car;
 
 	void CreateRacer();
 	void ClientCreate(RakNet::Packet *packet);
