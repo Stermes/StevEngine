@@ -2,6 +2,7 @@
 #include "SpriteRenderer.h"
 #include "Camera.h"
 #include "CarComp.h"
+#include "PhysicsBody.h"
 #include "NetworkIDManager.h"
 #include <iostream>
 #include "MenuState.h"
@@ -92,6 +93,10 @@ void PlayState::Update(float dt)
 	}
 }
 
+void PlayState::FixedUpdate(float dt)
+{
+	m_Root->FixedUpdate(dt);
+}
 void PlayState::ShutDown()
 {
 
@@ -174,6 +179,7 @@ void PlayState::HostCreate(RakNet::Packet *packet)
 	newNode->transform.scale.x = 0.5f;
 	newNode->transform.scale.y = 0.5f;
 	newNode->AddComponent(new CarComp(Pos + 1));
+	newNode->AddComponent(new PhysicsBody());
 	newNode->SetNetworkIDManager(NetworkManager::Instance().GetIDManager());
 	m_Root->AddChild(newNode);
 

@@ -144,6 +144,7 @@
     <ClCompile Include="MapLoader.cpp" />
     <ClCompile Include="MenuState.cpp" />
     <ClCompile Include="NetworkManager.cpp" />
+    <ClCompile Include="PhysicsBody.cpp" />
     <ClCompile Include="PhysicsManager.cpp" />
     <ClCompile Include="PlayState.cpp" />
     <ClCompile Include="Renderer.cpp" />
@@ -182,6 +183,7 @@
     <ClInclude Include="MenuState.h" />
     <ClInclude Include="NetworkManager.h" />
     <ClInclude Include="PacketInclude.h" />
+    <ClInclude Include="PhysicsBody.h" />
     <ClInclude Include="PhysicsManager.h" />
     <ClInclude Include="PlayState.h" />
     <ClInclude Include="Renderer.h" />

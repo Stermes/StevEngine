@@ -14,8 +14,10 @@ public:
 	~Component();
 
 public:
+	virtual void Init() {};
 	virtual void Render() {};
 	virtual void Update(float deltaTime) {};
+	virtual void FixedUpdate(float deltaTime) {};
 
 	virtual Component* GetComp(const type_info& type);
 

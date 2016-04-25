@@ -1,8 +1,16 @@
+#ifndef PHYSICSMANAGER_H
+#define PHYSICSMANAGER_H
+
 #pragma once
+#include "glm\glm.hpp"
+
 class PhysicsManager
 {
-public:
+public:	
+
 	PhysicsManager();
 	~PhysicsManager();
 };
 
+
+#endif

@@ -32,19 +32,25 @@ public:
 	~SceneNode();
 
 public:
+	// The init happens at the start of the game before anything else is called
+	virtual void Init();
 	// Updates this nodes components and children
 	virtual void Update(float deltaTime);
+	// Updates this nodes components and children
+	virtual void FixedUpdate(float deltaTime);
 
 	// Adds a component to the vector of attached components
 	void AddComponent(Component *comp);
 
+	// Returns the first component found of the type
 	Component* GetComponent(const type_info& type);
+
+	// Returns an array of components found of the type
+	std::vector<Component*> GetAllComponents(const type_info& type);
+
 	// Adds a child to the vector of attached sceneNodes
 	void AddChild(SceneNode *child);
-
-	// change from the last update frame
-	float deltaTime;	
-	
+		
 	glm::mat4 GetModelMatrix()
 	{
 		return m_Model;

@@ -13,6 +13,7 @@ public:
 
 	virtual void Init() override;
 	virtual void Update(float dt) override;
+	virtual void FixedUpdate(float dt) override;
 	virtual void ShutDown() override;
 	virtual void HandlePackets() override;
 
