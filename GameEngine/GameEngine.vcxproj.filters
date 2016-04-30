@@ -46,6 +46,18 @@
     <Filter Include="Source Files\Managers">
       <UniqueIdentifier>{2b89773c-a4df-4a05-8490-c4815cb6e92f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Components\PhysicsComponents">
+      <UniqueIdentifier>{ce9e2c7b-219c-4817-8be3-12809f5c0821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\PhysicsComponents">
+      <UniqueIdentifier>{2dfed901-5a78-4d6f-a093-236d1090192c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\RenderingComponents">
+      <UniqueIdentifier>{a0a208c4-237c-47f9-b706-f85e74fc9d37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components\RenderingComponents">
+      <UniqueIdentifier>{f0bc2186-76ee-4e20-b823-8b1a05f5979f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -72,15 +84,6 @@
     <ClCompile Include="SceneNode.cpp">
       <Filter>Source Files\Gameobject</Filter>
     </ClCompile>
-    <ClCompile Include="Renderer.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="TextRenderer.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>Source Files\Components</Filter>
-    </ClCompile>
     <ClCompile Include="ResourceManager.cpp">
       <Filter>Source Files\Managers</Filter>
     </ClCompile>
@@ -92,9 +95,6 @@
     </ClCompile>
     <ClCompile Include="RenderingManager.cpp">
       <Filter>Source Files\Managers</Filter>
-    </ClCompile>
-    <ClCompile Include="SpriteRenderer.cpp">
-      <Filter>Source Files\Components</Filter>
     </ClCompile>
     <ClCompile Include="NetworkManager.cpp">
       <Filter>Source Files\Managers</Filter>
@@ -121,7 +121,22 @@
       <Filter>Source Files\Managers</Filter>
     </ClCompile>
     <ClCompile Include="PhysicsBody.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Components\PhysicsComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\Components\RenderingComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteRenderer.cpp">
+      <Filter>Source Files\Components\RenderingComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="TextRenderer.cpp">
+      <Filter>Source Files\Components\RenderingComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\Components\RenderingComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Source Files\Components\PhysicsComponents</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -172,17 +187,8 @@
     <ClInclude Include="Component.h">
       <Filter>Header Files\Components</Filter>
     </ClInclude>
-    <ClInclude Include="Renderer.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
     <ClInclude Include="SceneNode.h">
       <Filter>Header Files\GameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="TextRenderer.h">
-      <Filter>Header Files\Components</Filter>
-    </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Header Files\Components</Filter>
     </ClInclude>
     <ClInclude Include="Singleton.h">
       <Filter>Header Files</Filter>
@@ -198,9 +204,6 @@
     </ClInclude>
     <ClInclude Include="RenderingManager.h">
       <Filter>Header Files\Managers</Filter>
-    </ClInclude>
-    <ClInclude Include="SpriteRenderer.h">
-      <Filter>Header Files\Components</Filter>
     </ClInclude>
     <ClInclude Include="NetworkManager.h">
       <Filter>Header Files\Managers</Filter>
@@ -233,7 +236,22 @@
       <Filter>Header Files\Managers</Filter>
     </ClInclude>
     <ClInclude Include="PhysicsBody.h">
-      <Filter>Header Files\Components</Filter>
+      <Filter>Header Files\Components\PhysicsComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Header Files\Components\PhysicsComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="TextRenderer.h">
+      <Filter>Header Files\Components\RenderingComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteRenderer.h">
+      <Filter>Header Files\Components\RenderingComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\Components\RenderingComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files\Components\RenderingComponents</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

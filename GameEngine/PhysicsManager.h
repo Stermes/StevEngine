@@ -2,14 +2,24 @@
 #define PHYSICSMANAGER_H
 
 #pragma once
-#include "glm\glm.hpp"
+#include <vector>
+#include <list>
 
 class PhysicsManager
 {
 public:	
-
 	PhysicsManager();
 	~PhysicsManager();
+	
+	void AddCollider(class Collider*);
+	void RemoveCollider(class Collider*);
+
+	void CalculateCollisions();
+
+private:
+	std::list<class Collider*> Colliders;
+	std::list<class PhysicsBody*> PhysicsBodies;
+
 };
 
 

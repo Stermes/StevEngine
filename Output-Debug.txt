@@ -1,54 +1,89 @@
-﻿'GameEngine.exe' (Win32): Loaded 'C:\Users\Steven\Desktop\SteveEngine\Debug\GameEngine.exe'. Symbols loaded.
+﻿'GameEngine.exe' (Win32): Loaded 'C:\Users\Steve\Documents\StevEngine\Debug\GameEngine.exe'. Symbols loaded.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntdll.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel32.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\KernelBase.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Users\Steven\Desktop\SteveEngine\GameEngine\freetype6.dll'. Module was built without symbols.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\opengl32.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Users\Steven\Desktop\SteveEngine\Debug\glew32.dll'. Module was built without symbols.
+'GameEngine.exe' (Win32): Loaded 'C:\Program Files (x86)\AVG\Av\avghookx.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\user32.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gdi32.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shell32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cfgmgr32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\windows.storage.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sspicli.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\advapi32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shlwapi.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\SHCore.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\powrprof.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\profapi.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ws2_32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Users\Steve\Documents\StevEngine\Debug\irrKlang.dll'. Module was built without symbols.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ole32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Users\Steve\Documents\StevEngine\Debug\freetype6.dll'. Module was built without symbols.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\opengl32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Users\Steve\Documents\StevEngine\Debug\glew32.dll'. Module was built without symbols.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcp140d.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\vcruntime140d.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ucrtbased.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Users\Steven\Desktop\SteveEngine\Debug\zlib1.dll'. Module was built without symbols.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msvcrt.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\advapi32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmm.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Users\Steve\Documents\StevEngine\Debug\zlib1.dll'. Module was built without symbols.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\glu32.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ddraw.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\combase.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\shlwapi.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sechost.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rpcrt4.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dciman32.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptbase.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\sspicli.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcryptprimitives.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imm32.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msctf.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\uxtheme.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmm.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winmmbase.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cfgmgr32.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\devobj.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dciman32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imm32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\uxtheme.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dwmapi.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ig7icd32.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\igdusc32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msctf.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\nvoglv32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\setupapi.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wtsapi32.dll'. Cannot find or open the PDB file.
 'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\version.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\version.dll'
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\powrprof.dll'. Cannot find or open the PDB file.
-The thread 0x1008 has exited with code 0 (0x0).
-The thread 0x3fc4 has exited with code 0 (0x0).
-The thread 0x9b4 has exited with code 0 (0x0).
-The thread 0xbfc has exited with code 0 (0x0).
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ole32.dll'. Cannot find or open the PDB file.
-'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\kernel.appcore.dll'. Cannot find or open the PDB file.
-The thread 0x1d94 has exited with code 0 (0x0).
-The thread 0x17c4 has exited with code 0 (0x0).
-The thread 0x433c has exited with code 0 (0x0).
-The thread 0x2ecc has exited with code 0 (0x0).
-'GameEngine.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmmbase.dll'
-'GameEngine.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\devobj.dll'
-'GameEngine.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\cfgmgr32.dll'
-'GameEngine.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\winmm.dll'
-The program '[14684] GameEngine.exe' has exited with code 0 (0x0).
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\devobj.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wintrust.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msasn1.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\crypt32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ntmarta.dll'. Cannot find or open the PDB file.
+The thread 0xd58 has exited with code 0 (0x0).
+The thread 0x1d54 has exited with code 0 (0x0).
+The thread 0x25e8 has exited with code 0 (0x0).
+The thread 0x83c has exited with code 0 (0x0).
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winsta.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\mswsock.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\NapiNSP.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\pnrpnsp.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\nlaapi.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dnsapi.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\nsi.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winrnr.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\IPHLPAPI.DLL'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\FWPUCLNT.DLL'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcrypt.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rasadhlp.dll'. Cannot find or open the PDB file.
+irrKlang sound library version 1.5.0
+'GameEngine.exe' (Win32): Loaded 'C:\Users\Steve\Documents\StevEngine\Debug\ikpMP3.dll'. Module was built without symbols.
+Loaded plugin: ikpmp3.dll
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\clbcatq.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dsound.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\MMDevAPI.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\propsys.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\oleaut32.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\AudioSes.dll'. Cannot find or open the PDB file.
+'GameEngine.exe' (Win32): Loaded 'C:\Windows\SysWOW64\WinTypes.dll'. Cannot find or open the PDB file.
+Using DirectSound8 driver
+The thread 0x2618 has exited with code 0 (0x0).
+The thread 0x31c8 has exited with code 0 (0x0).
+The thread 0x2670 has exited with code 0 (0x0).
+The thread 0x37d0 has exited with code 0 (0x0).
+The thread 0x3644 has exited with code 0 (0x0).
+The thread 0x3078 has exited with code 0 (0x0).
+The thread 0x2460 has exited with code 0 (0x0).
+The thread 0x8e0 has exited with code 0 (0x0).
+The thread 0x1c30 has exited with code 0 (0x0).
+The thread 0x2ce0 has exited with code 0 (0x0).
+The program '[14592] GameEngine.exe' has exited with code 0 (0x0).

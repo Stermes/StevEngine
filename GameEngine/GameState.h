@@ -19,14 +19,15 @@ public:
 	// Initialization function of the current gameste
 	virtual void Init() = 0;
 	// Updates all objects within the game
-	virtual void Update(float dt) {};
-	virtual void FixedUpdate(float dt) {};
+	virtual void Update(float dt);
+	virtual void FixedUpdate(float dt);
 	// Shutsdown the current game scene
 	virtual void ShutDown() = 0;
 
 	virtual void HandlePackets() {};
 
-	class RenderingManager *m_RenderingManager;
+	class RenderingManager *renderManager;
+	class PhysicsManager *physicsManager;
 
 protected:
 	// The game state manager

@@ -6,7 +6,11 @@
 #include "NetworkIDManager.h"
 #include <iostream>
 #include "MenuState.h"
+#include "Collider.h"
 
+#include <sstream>
+#include <time.h>
+float lTime = 0;
 
 PlayState::PlayState() : GameState()
 {
@@ -18,6 +22,15 @@ PlayState::~PlayState()
 
 void PlayState::Init()
 {
+	TextRenderer *textRender = new TextRenderer(m_Manager->Width, m_Manager->Height);
+	textRender->Load("neuropolitical rg.ttf", 24);
+
+	counter = new SceneNode();
+	counter->AddComponent(textRender);
+	counter->transform.position.y = m_Manager->Height / 2;
+	counter->transform.position.x = m_Manager->Width / 2;
+	m_Root->AddChild(counter);
+
 	Pos = 0;
 	called = false;
 	ResourceManager::LoadShader("LightingVS.glsl", "SpriteFS.glsl", nullptr, "SpriteShader");
@@ -56,6 +69,23 @@ void PlayState::Init()
 
 void PlayState::Update(float dt)
 {
+	__super::Update(dt);
+
+	if (m_Manager->time - lTime >= 1)
+	{
+		TextRenderer* tRender = (TextRenderer*)counter->GetComponent(typeid(TextRenderer));
+		if (tRender)
+		{
+			std::stringstream ss;
+			ss = std::stringstream();
+			ss << m_Manager->frame;
+			tRender->Text = ss.str();
+			m_Manager->frame = 0;
+			lTime = m_Manager->time;
+			ss.clear();
+		}
+	}
+
 	if (!called)
 	{
 		if (NetworkManager::Instance().m_IsHost)
@@ -80,9 +110,7 @@ void PlayState::Update(float dt)
 	ResourceManager::GetShader("SpriteShader").SetMatrix4("projection", projection);
 
 	HandlePackets();
-
-	m_Root->Update(dt);
-
+	
 	if (Winner > 0)
 	{
 		Timer += dt;
@@ -95,8 +123,9 @@ void PlayState::Update(float dt)
 
 void PlayState::FixedUpdate(float dt)
 {
-	m_Root->FixedUpdate(dt);
+	__super::FixedUpdate(dt);
 }
+
 void PlayState::ShutDown()
 {
 
@@ -171,17 +200,22 @@ void PlayState::HostCreate(RakNet::Packet *packet)
 		return;
 	}
 
-	SceneNode* newNode = new SceneNode();
-	std::string loc = "Still" + std::to_string(Pos + 1);
-	newNode->AddComponent(new SpriteRenderer(ResourceManager::GetShader("SpriteShader"), ResourceManager::GetTexture(loc.c_str())));
-	newNode->transform.position.y = 200 - 100 * Pos;
-	newNode->transform.position.x = -300;
-	newNode->transform.scale.x = 0.5f;
-	newNode->transform.scale.y = 0.5f;
-	newNode->AddComponent(new CarComp(Pos + 1));
-	newNode->AddComponent(new PhysicsBody());
-	newNode->SetNetworkIDManager(NetworkManager::Instance().GetIDManager());
-	m_Root->AddChild(newNode);
+	srand(time(NULL));
+
+	SceneNode* newNode;
+	for (int i = 0; i < 5000; i++)
+	{
+		newNode = new SceneNode();
+		std::string loc = "Still" + std::to_string(Pos + 1);
+		newNode->AddComponent(new SpriteRenderer(ResourceManager::GetShader("SpriteShader"), ResourceManager::GetTexture(loc.c_str())));
+		newNode->transform.position.y = rand() % m_Manager->Height - m_Manager->Height / 2;
+		newNode->transform.position.x = rand() % m_Manager->Width - m_Manager->Width / 2;
+		newNode->transform.scale.x = 0.25f;
+		newNode->transform.scale.y = 0.25f;
+		newNode->AddComponent(new CarComp(Pos + 1));
+		newNode->SetNetworkIDManager(NetworkManager::Instance().GetIDManager());
+		m_Root->AddChild(newNode);
+	}
 
 	RakNet::BitStream oStream;
 	oStream.Write((RakNet::MessageID)ID_CLIENT_CREATE_RACER);
@@ -315,8 +349,6 @@ void PlayState::Accel(RakNet::Packet *packet)
 	iStream.Read(netID);
 	float speed;
 	iStream.Read(speed);
-
-	std::cout << netID << std::endl;
 
 	SceneNode* node = NetworkManager::Instance().GetIDManager()->GET_OBJECT_FROM_ID<SceneNode*>(netID);
 

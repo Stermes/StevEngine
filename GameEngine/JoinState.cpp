@@ -54,7 +54,8 @@ void JoinState::Init()
 
 void JoinState::Update(float dt)
 {
-	
+	__super::Update(dt);
+
 	// Prints the number of connections on the screen
 	TextRenderer* tRender = (TextRenderer*)ConnectionText->GetComponent(typeid(TextRenderer));
 	if (tRender)
@@ -71,7 +72,6 @@ void JoinState::Update(float dt)
 	}
 
 	HandlePackets();
-	m_Root->Update(dt);
 }
 
 void JoinState::ShutDown()

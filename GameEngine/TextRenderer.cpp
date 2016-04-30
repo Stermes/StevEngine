@@ -19,7 +19,7 @@ TextRenderer::TextRenderer(GLuint width, GLuint height) : Renderer()
 	this->Text = "Text";
 
 	InitText();
-	m_Manager->CurrentState()->m_RenderingManager->InsertRenderer(this);
+	m_Manager->CurrentState()->renderManager->InsertRenderer(this);
 }
 
 void TextRenderer::Load(std::string font, GLuint fontSize)

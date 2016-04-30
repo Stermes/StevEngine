@@ -1,8 +1,10 @@
 #include "PhysicsBody.h"
 #include "PhysicsManager.h"
+#include "GameState.h"
 
 PhysicsBody::PhysicsBody() : Component(), Gravity(-980)
 {
+
 }
 
 

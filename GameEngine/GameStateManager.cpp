@@ -40,7 +40,7 @@ void GameStateManager::RenderState()
 	{
 		return;
 	}
-	States.top()->m_RenderingManager->Render();
+	States.top()->renderManager->Render();
 }
 
 

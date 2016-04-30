@@ -66,6 +66,8 @@ void MenuState::Init()
 
 void MenuState::Update(float dt)
 {
+	__super::Update(dt);
+
 	// view matrix
 	glm::mat4 view;
 	view = camera->GetViewMatrix();
@@ -95,9 +97,7 @@ void MenuState::Update(float dt)
 			ss.clear();
 		}
 	}
-
-	m_Root->Update(dt);
-
+	
 }
 
 void MenuState::FixedUpdate(float dt)

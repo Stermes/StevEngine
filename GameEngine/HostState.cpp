@@ -58,12 +58,12 @@ void HostState::Init()
 	button->transform.position.y = m_Manager->Height / 2 - 50;
 	m_Root->AddChild(button);
 
-
-	
 }
 
 void HostState::Update(float dt)
 {
+	__super::Update(dt);
+
 	if (Exit)
 	{
 		ChangeState(new MenuState());
@@ -85,7 +85,6 @@ void HostState::Update(float dt)
 	}
 
 	HandlePackets();
-	m_Root->Update(dt);
 	
 }
 

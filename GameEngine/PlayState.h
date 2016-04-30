@@ -20,7 +20,7 @@ public:
 private:
 	class Camera* camera;
 	SceneNode *Text;
-
+	SceneNode *counter;
 	void CreateRacer();
 	void ClientCreate(RakNet::Packet *packet);
 	void HostCreate(RakNet::Packet *packet);

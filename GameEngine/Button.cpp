@@ -29,7 +29,7 @@ Button::Button(float width, float height) : Renderer()
 
 	InitButton();
 	state = ButtonState::NORMAL;
-	m_Manager->CurrentState()->m_RenderingManager->InsertRenderer(this);
+	m_Manager->CurrentState()->renderManager->InsertRenderer(this);
 }
 
 Button::~Button()

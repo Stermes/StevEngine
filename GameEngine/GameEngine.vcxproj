@@ -135,6 +135,7 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CarComp.cpp" />
+    <ClCompile Include="Collider.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="GameStateManager.cpp" />
@@ -172,6 +173,7 @@
     <ClInclude Include="Button.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="CarComp.h" />
+    <ClInclude Include="Collider.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="GameStateManager.h" />

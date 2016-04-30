@@ -16,8 +16,9 @@ SpriteRenderer::SpriteRenderer(Shader &shader, Texture2D &texture)
 {
 	this->shader = shader;
 	this->texture = texture;
-	InitRenderer();
-	m_Manager->CurrentState()->m_RenderingManager->InsertRenderer(this);
+	//InitRenderer();
+	//m_Manager->CurrentState()->renderManager->InsertRenderer(this);
+	m_Manager->CurrentState()->renderManager->InsertRenderBatch(this, RenderingManager::RenderType::SPRITE);
 }
 
 SpriteRenderer::~SpriteRenderer()
@@ -34,19 +35,19 @@ void SpriteRenderer::Render()
 	glActiveTexture(GL_TEXTURE0);
 	texture.Bind();
 
-	glDrawArrays(GL_TRIANGLES, 0, 6);
+	//glDrawArrays(GL_TRIANGLES, 0, 6);
 
 }
 
 
 void SpriteRenderer::InitRenderer()
 {
-	/*if (ResourceManager::GetVAO("Sprite"))
-	{
-		VAO = ResourceManager::GetVAO("Sprite");
-		return;
-	}
-*/
+	//if (ResourceManager::GetVAO("Sprite"))
+	//{
+	//	VAO = ResourceManager::GetVAO("Sprite");
+	//	return;
+	//}
+
 	GLfloat Cube[] = {
 		// Positions           // Normals           // Texture Coords
 		-(GLfloat)texture.Width / 2, -(GLfloat) texture.Height/2, -0.0f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,

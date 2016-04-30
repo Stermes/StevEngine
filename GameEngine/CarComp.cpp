@@ -26,16 +26,16 @@ CarComp::~CarComp()
 
 void CarComp::Update(float DeltaTime)
 {
-	if (gameObject->transform.position.x > 350 && !AllreadyWinner)
-	{
-		RakNet::BitStream oStream;
+	//if (gameObject->transform.position.x > 350 && !AllreadyWinner)
+	//{
+	//	RakNet::BitStream oStream;
 
-		oStream.Write((RakNet::MessageID)ID_WINNER);
-		oStream.Write(CarNum);
+	//	oStream.Write((RakNet::MessageID)ID_WINNER);
+	//	oStream.Write(CarNum);
 
-		NetworkManager::Instance().peer->Send(&oStream, HIGH_PRIORITY, RELIABLE_ORDERED, 0, RakNet::UNASSIGNED_SYSTEM_ADDRESS, true);
-		AllreadyWinner = true;
-	}
+	//	NetworkManager::Instance().peer->Send(&oStream, HIGH_PRIORITY, RELIABLE_ORDERED, 0, RakNet::UNASSIGNED_SYSTEM_ADDRESS, true);
+	//	AllreadyWinner = true;
+	//}
 
 	gameObject->transform.position.x += m_Speed * DeltaTime;
 
